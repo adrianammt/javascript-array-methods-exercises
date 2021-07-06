@@ -44,3 +44,26 @@ const tvShows = [
 ];
 
 // Your code below
+
+const movieTitels = tvShows.map((element) => {
+  return element.title;
+});
+console.log(movieTitels);
+
+const titleAndRatings = tvShows.map((element) => {
+  const title = element.title;
+  const rating = element.rating;
+  return `${title}, ${rating}`;
+});
+console.log(titleAndRatings);
+
+const conditionalMovieTitels = tvShows.map((element) => {
+  const title = element.title;
+  const rating = element.rating;
+  if (rating >= 9) {
+    return element.title.toUpperCase();
+  } else {
+    return element.title.toLowerCase();
+  }
+});
+console.log(conditionalMovieTitels);

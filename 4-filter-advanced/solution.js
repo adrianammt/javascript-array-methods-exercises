@@ -44,3 +44,18 @@ const tvShows = [
 ];
 
 // Your code below
+
+const watchedShows = tvShows.filter((element) => {
+  return element.watched === true;
+});
+console.log(watchedShows);
+
+const rating9orMore = tvShows.filter((element) => {
+  return element.rating >= 9;
+});
+console.log(rating9orMore);
+
+const publishedBefore2015 = tvShows.filter((element) => {
+  return element.publishingYear < 2015;
+});
+console.log(publishedBefore2015);
