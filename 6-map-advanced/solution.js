@@ -58,9 +58,7 @@ const titleAndRatings = tvShows.map((element) => {
 console.log(titleAndRatings);
 
 const conditionalMovieTitels = tvShows.map((element) => {
-  const title = element.title;
-  const rating = element.rating;
-  if (rating >= 9) {
+  if (element.rating >= 9) {
     return element.title.toUpperCase();
   } else {
     return element.title.toLowerCase();
